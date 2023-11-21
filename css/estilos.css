@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Agbalumo';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(229, 200, 159);
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(255, 228, 196, 0.5);
+    position: fixed;
+    z-index: 1;
+}
+
+.cabecera__logo--img {
+    clip-path: circle(50%);
+    height: 6rem;
+    margin: .4rem;
+}
+
+.cabecera__nav__lista {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.cabecera__nav__elementoLista {
+    margin: 0 2rem;
+}
+
+.cabecera__nav__elementoLista a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(45, 24, 3);
+}
+
+.cabecera__nav__elementoLista a:hover {
+    font-size: 1.7rem;
+}
+
+.cabecera__button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.cabecera__nav__elementoLista--aparece {
+    display: none;
+}
+
+.seccionHero {
+    height: 100vh;
+    background-image: url('../img/hero-image.jpg');    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionHero__contenido {
+    position: absolute;
+    top: 10rem;
+    height: 70%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    clip-path: circle(44%);
+    background-color: rgba(74, 51, 20, 0.95);
+    animation: entrada 1.5s ease-in-out 0s;
+}
+
+.seccionHero__contenido--img {
+    position: relative;
+    max-width: 60%;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionHero__contenido--img img{
+    height: 100%;
+}
+
+.seccionHero__contenido--txt {
+    max-width: 40%;
+    margin: 0;
+    padding: 0;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.seccionHero__contenido--txt button {
+    cursor: pointer;
+    padding: .6rem;
+}
+
+.seccionHero__contenido--txt button:active {
+    transform: scale(0.95);
+}
+
+.tresCards {
+    width: 100%;
+    height: 100vh;
+    padding: 7rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tresCards__contenido {
+    min-width: 40rem;
+    height: 100%;
+    background: url('../img/mesa.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0) 0px 5px 15px;
+    overflow: hidden;
+}
+
+.tresCards__contenido_slider {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    display: flex;
+}
+
+.tresCards__card {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
+
+.plato {
+    height: 100%;
+    width: 70%;
+    clip-path: circle(40%);
+    background-color: whitesmoke;
+    filter: drop-shadow(30px 10px 4px black);
+}
+
+.plato__dentro {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    clip-path: circle(30%);
+    background-color: rgba(216, 216, 216, 0.882);
+    border: 2px solid black;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plato__dentro h1, p {
+    color: black;
+}
+
+.plato__dentro p {
+    font-size: 2rem;
+}
+
+.boton {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 3rem;
+    color: rgb(45, 24, 3);
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.imagen_mesa {
+    height: 7rem;
+    width: 100%;
+    background: url('../img/mesa-footer.jpg.png') no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.pie {
+    position: relative;
+    height: 18rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    color: rgb(233, 165, 83);
+    background-color: rgb(116, 70, 41);
+}
+
+.horarios p {
+    color: rgb(233, 165, 83);
+}
+
+.horarios, .localizacion, .contacto {
+    transition: font-size 0.5s;
+}
+
+.pie__info {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.pie__info section {
+    margin: 0px;
+}
+
+.pie__info section h3, h4, p{
+    margin: 2px;
+}
+
+.pie__mapa {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pie__mapa h1 {
+    transition: font-size .5s;
+}
+
+.pie__mapa--mapa {
+    height: 60%;
+    width: 80%;
+    border-radius: 6px;
+    box-shadow: rgb(45, 24, 3) 0px 20px 30px -10px;
+    transition: transform 1s;
+    transition: width .5s;
+}
+
+.pie__mapa--mapa:hover {
+    transform: scale(1.1);
+}
+
+.pie__logo {
+    position: relative;
+    width: 30%;
+}
+
+.pie__logo--img {
+    position: absolute;
+    top: -6rem;
+    right: -5.5rem;
+    height: 30rem;
+    width: auto;
+    clip-path: circle(50%);
+}
+
+@keyframes entrada {
+    from {
+        transform: translateY(-150%);
+    }
+    to {
+
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    .pie__logo--img {
+        clip-path: none;
+        position: static;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .seccionHero__contenido {
+        clip-path: none;
+        flex-direction: column;
+        height: 60%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .seccionHero__contenido--img {
+        max-width: none;
+        width: 100%;
+        height: 65%;
+        align-items: center;
+        padding: 0;
+    }
+
+    .seccionHero__contenido--img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .seccionHero__contenido--txt {
+        max-width: none;
+        width: 100%;
+        height: 35%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .horarios, .localizacion, .contacto h4, h3, p {
+        font-size: 1rem;
+    }
+
+    .horarios, .localizacion, .contacto p {
+        font-size: .8rem;
+    }
+
+    .pie__mapa {
+        justify-content: center;
+    }
+
+    .pie__mapa--mapa {
+        width: 60%;
+    }
+
+    .pie__mapa h1 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .cabecera__nav__elementoLista {
+        display: none;
+    }
+
+    .cabecera__nav__elementoLista--aparece {
+        display: block;
+    }
+
+    .tresCards__contenido {
+        min-width: 25rem;
+        width: 60%;
+        height: 70%;
+    }
+}

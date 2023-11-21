@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Como en Casa</title>
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header class="cabecera">
+            <a class="cabecera__logo" href="#" title="logo">
+                <img class="cabecera__logo--img" src="./img/logo.jpg" alt="logo">
+            </a>
+            <nav class="cabecera__nav">
+                <ul class="cabecera__nav__lista">
+                    <li class="cabecera__nav__elementoLista"><a href="#" title="linkCarta">Carta</a></li>
+                    <li class="cabecera__nav__elementoLista"><a href="#" title="linkHistoria">Historia</a></li>
+                    <li class="cabecera__nav__elementoLista"><a href="#" title="linkReserva">Reserva</a></li>
+                    <li class="cabecera__nav__elementoLista cabecera__nav__elementoLista--aparece">
+                        <button class="cabecera__button">
+                            &equiv;
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="seccionHero">
+                <div class="seccionHero__contenido">
+                    <div class="seccionHero__contenido--img">
+                        <img src="./img/logo.jpg" alt="logo ComoEnCasa">
+                    </div>
+                    <div class="seccionHero__contenido--txt">
+                        <h1>Bienvenido a mi restaurante</h1>
+                        <button>Compra ya!</button>
+                    </div>
+                </div>
+            </section>
+            <section class="tresCards">
+                <div class="boton">
+                    <button class="btn" id="btn_izq"><h1><</h1></button>
+                </div>
+                <div class="tresCards__contenido">
+                    <div id="platos_contenido" class="tresCards__contenido_slider">
+                        <div id="plato_albondigas" class="tresCards__card">
+                            <div class="plato"></div>
+                            <div class="plato__dentro">
+                                <h1>ALBÓNDIGAS</h1>
+                                <p>8,50€</p>
+                            </div>
+                        </div>
+                        <div id="plato_espaguetis" class="tresCards__card">
+                            <div class="plato"></div>
+                            <div class="plato__dentro">
+                                <h1>ESPAGUETIS</h1>
+                                <p>5,50€</p>
+                            </div>
+                        </div>
+                        <div id="plato_cocido" class="tresCards__card">
+                            <div class="plato"></div>
+                            <div class="plato__dentro">
+                                <h1>COCIDO</h1>
+                                <p>7,95€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boton">
+                    <button class="btn" id="btn_der"><h1>></h1></button>
+                </div>
+            </section>
+            <div class="imagen_mesa"></div>
+        </main>
+        <footer class="pie">
+            <div class="pie__info">
+                <section class="horarios">
+                    <h3>Horario de servicio</h3>
+                    <p>Lunes a Miércoles 12:00-20:00</p>
+                    <p>Sábados 13:00-00:00</p>
+                </section>
+                <section class="localizacion">
+                    <h4>Calle Clarinetes, 1 / 28054 Madrid</h4>
+                </section>
+                <section class="contacto">
+                    <h3>(+34) 634 54 99 92</h3>
+                    <h3>comoencasa@gmail.com</h3>
+                </section>
+            </div>
+            <div class="pie__mapa">
+                <h1>¿Dónde encontrarnos?</h1>
+                <iframe class="pie__mapa--mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.6305740614807!2d-3.7667423244308647!3d40.37271505831779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4188357d4c6691%3A0xa34c8847c3408320!2sC.%20de%20los%20Clarinetes%2C%201%2C%2028044%20Madrid!5e0!3m2!1ses!2ses!4v1699892587970!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="pie__logo">
+                <img class="pie__logo--img" src="./img/logo.jpg" alt="Logo empresa">
+            </div>
+        </footer>
+        <script src="./js/platos.js"></script>
+    </body>
+</html>
